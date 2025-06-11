@@ -1,0 +1,11 @@
+[Unit]
+Description=Update mirror HTML index every 15 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=720min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+

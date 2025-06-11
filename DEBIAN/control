@@ -1,0 +1,9 @@
+Package: repomirror
+Version: 1.0
+Section: admin
+Priority: optional
+Architecture: all
+Maintainer: UCSB GRIT <help@grit.ucsb.edu>
+Depends: rsync, python3, systemd, python3-yaml
+Description: repo mirror manager with YAML config and web status page
+

@@ -1,0 +1,11 @@
+#!/bin/bash
+set -e
+
+echo "→ Enabling and starting mirror-sync.timer"
+systemctl enable --now mirror-sync.timer
+
+echo "→ Enabling and starting mirror-index.timer"
+systemctl enable --now mirror-index.timer
+
+exit 0
+

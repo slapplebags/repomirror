@@ -1,0 +1,7 @@
+[Unit]
+Description=Sync Linux distro mirrors via rsync
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/mirror-sync.py
+

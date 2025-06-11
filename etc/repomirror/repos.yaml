@@ -1,0 +1,27 @@
+base_path: /home/reflection
+repos:
+- family: ubuntu
+  local: ubuntu
+  name: Ubuntu
+  remote: rsync://archive.ubuntu.com/ubuntu/
+- family: debian
+  local: debian
+  name: Debian
+  remote: rsync://ftp5.gwdg.de/pub/linux/debian/
+- family: debian
+  local: debian-security
+  name: Debian Security
+  remote: rsync://ftp.gwdg.de/debian-security/ 
+- family: fedora
+  local: fedora
+  name: Fedora 
+  remote: rsync://mirror.math.princeton.edu/pub/fedora/
+- family: opensuse
+  local: opensuse/leap/
+  name: openSUSE Leap 
+  remote: rsync://ftp5.gwdg.de/pub/opensuse/distribution/leap/
+- family: archlinux
+  local: archlinux/
+  name: Arch Linux
+  remote: rsync://mirrors.ocf.berkeley.edu/archlinux/
+  rsync_opts: "-rlptH --safe-links --delete-delay --delay-updates"

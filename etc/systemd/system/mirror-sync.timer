@@ -1,0 +1,12 @@
+[Unit]
+Description=Run mirror sync periodically
+
+[Timer]
+OnBootSec=2min
+OnUnitActiveSec=12h
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+
+
